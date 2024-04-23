@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+            <th colspan="2">HTML CHEATSHEET</th>
+            
+            </tr>
+            <tr>
+            <td>
+                <h3>Document Summary</h3>
+
+                <p>&lt;html&gt;&lt;/html&gt;<br>
+                    Creates an HTML document</p>
+                <p>&lt;head&gt;&lt;/head&gt;<br>
+                Sets off the title & other info that isn't displayed</p>
+                <p>&lt;body&gt;&lt;/body&gt;<br>
+                Sets off the visible portion of the document</p>
+                <p>&lt;title&gt;&lt;/title&gt;<br>
+                Puts name of the document in the title bar; when
+                bookmarking pages, this is what is bookmarked</p>
+
+                <h3>Document Structure</h3>
+
+                <p>&lt;h1..h6&gt; … &lt;/h1..h6&gt;<br>
+                Six different variations of writing a heading.
+                &lt;h1&gt; has the largest font size, while &lt;h6&gt; has
+                the smallest.</p>
+                <p>&lt;div&gt;&lt;/div&gt;<br>
+                A webpage’s content is usually divided into
+                blocks, specified by the div tag.</p>
+                <p>&lt;span&gt;&lt;/span&gt;<br>
+                This tag injects inline elements, like an image,
+                icon, emoticon without ruining the formatting
+                / styling of the page.</p>
+                <p>&lt;p&gt;&lt;/p&gt;<br>
+                Plain text is placed inside this tag.</p>
+                <p>&lt;br/&gt;<br>
+                A line break for webpages. Is used when
+                wanting to write a new line.</p>
+                <p>&lt;hr/&gt;<br>
+                Similar to the above tag. But in addition to
+                switching to the next line, this tag also draws
+                a horizontal bar to indicate the end
+                of the section.</p>
+                
+                <h3>List</h3>
+
+                <p>&lt;ol&gt;&lt;/ol&gt;<br>
+                Tag for ordered or numbered list of items.</p>
+                <p>&lt;ul&gt;&lt;/ul&gt;<br>
+                Contrary to the above tag, used for unordered
+                list of items.</p>
+                <p>&lt;li&gt;&lt;/li&gt;<br>
+                Individual item as part of a list.</p>
+                <p>&lt;dl&gt;&lt;/dl&gt;<br>
+                Tag for list of items with definitions.</p>
+                <p>&lt;dt&gt;&lt;/dt&gt;<br>
+                The definition of a single term inline with
+                body content.</p>
+                <p>&lt;dd&gt;&lt;/dd&gt;<br>
+                The description for the defined term.</p>
+
+                <h3>Form</h3>
+
+                <p>&lt;form&gt;&lt;/form&gt;<br>
+                Defines a form</p>
+                <p>&lt;select multiple name=? size=?> &lt;/select&gt;<br>
+                Creates a scrolling menu. Size sets the number of
+                menu items visible before user needs to scroll.</p>
+                select name=?> &lt;/select&gt;<br>
+                Creates a pulldown menu</p>
+                <p>&lt;option&gt;<br>
+                Sets off each menu item</p>
+                <p>&lt;textarea name=? cols="x" rows="y"&gt;&lt;/textarea&gt;<br>
+                Creates a text box area. Columns set the width;
+                rows set the height.</p>
+                <p>&lt;input type="checkbox" name=? value=?&gt;<br>
+                Creates a checkbox.</p>
+                <p>&lt;input type="checkbox" name=? value=? checked&gt;<br>
+                Creates a checkbox which is pre-checked.</p>
+                <p>&lt;input type="radio" name=? value=?&gt;<br>
+                Creates a radio button.</p>
+                <p>&lt;input type="radio" name=? value=? checked&gt;<br>
+                Creates a radio button which is pre-checked.</p>
+                <p>&lt;input type="text" name=? size=?&gt;<br>
+                Creates a one-line text area. Size sets length, in
+                characters.</p>
+                <p>&lt;input type="submit" value=?&gt;<br>
+                Creates a submit button. Value sets the text in the
+                submit button.</p>
+                <p>&lt;input type="image" name=? src=? border=? alt=?&gt;<br>
+                Creates a submit button using an image. </p>
+                <p>&lt;input type="reset"&gt;<br>
+                Creates a reset button</p>
+                
+                <h3>Graphhical Elements</h3>
+
+                <p>&lt;img src="URL" /&gt;<br>
+                Adds image; it is a separate file located at the URL</p>
+                <p>&lt;img src="URL" align=?&gt;<br>
+                Aligns image left/right/center/bottom/top/middle (use CSS)</p>
+                <p>&lt;img src="URL" border=?&gt;<br>
+                Sets size of border surrounding image (use CSS)</p>
+                <p>&lt;img src="URL" height=?&gt;<br>
+                Sets height of image, in pixels</p>
+                <p>&lt;img src="URL" width=?&gt;<br>
+                Sets width of image, in pixels</p>
+                <p>&lt;img src="URL" alt=?&gt;<br>
+                Sets the alternate text for browsers that can't
+                process images (required by the ADA).</p>
+
+
+            </td>
+            <td>
+                <h3>Document Information</h3>
+
+                <p> &lt;base/&gt;<br>
+                Used to specify the base URL of your site,
+                this tag makes linking to internal links on your
+                site cleaner
+                </p>
+                <p>&lt;meta/&gt;<br>
+                This is the meta data tag for the webpage.
+                Can be useful for mentioning the page’s author,
+                keywords, original published date etc.
+                </p>
+                <p>&lt;link/&gt;<br>
+                This is used to link to scripts external to
+                the webpage. Typically utilized for including
+                stylesheets.</p>
+                <p>&lt;style&gt;&lt;/style&gt;<br>
+                The style tag can be used as an alternative to
+                an external style sheet, or complement it.
+                Includes the webpage’s appearance information.</p>
+                <p>&lt;script&gt;&lt;/script&gt;<br>
+                Used to add code snippets, typically in JavaScript,
+                to make webpage dynamic. It can also be used to
+                just link to an external script</p>
+
+                <h3>Text Formatting</h3>
+
+                <p>&lt;strong&gt;&lt;/strong&gt;<br>
+                Makes text bold. Used to emphasize a point</p>
+                <p>&lt;b&gt;&lt;/b&gt;<br>
+                Alternative to the above tag, also creates bold text.</p>
+                <p>&lt;em&gt;&lt;/em&gt;<br>
+                Another emphasis tag, but this displays text
+                in italics.</p>
+                <p>&lt;i&gt;&lt;/i&gt;<br>
+                Also used to display text in italics, but does not
+                emphasize it like the above tag.</p>
+                <p>&lt;tt&gt;&lt;/tt&gt;<br>
+                Formatting for typewriter-like text. No longer</p>
+                supported in HTML5.</p>
+                <p>&lt;strike&gt;&lt;/strike&gt;<br>
+                Another old tag, this is used to draw a line at
+                the center of the text, so as to make it appear
+                unimportant or no longer useful.</p>
+                <p>&lt;cite&gt;&lt;/cite&gt;<br>
+                Tag for citing author of a quote.</p>
+                <p>&lt;del&gt;&lt;/del&gt;<br>
+                Pre-formatted, ‘monospace’ text laid out with
+                whitespace inside the element intact.</p>
+                <p>&lt;ins&gt;&lt;/ins&gt;<br>
+                Denotes text that has been inserted into
+                the webpage.</p>
+                <p>&lt;blockquote&gt;&lt;/blockquote&gt;<br>
+                Quotes often go into this tag. Is used in tandem with
+                the <cite> tag.</p>
+                    <p>&lt;q&gt;&lt;/q&gt;<br>
+                Similar to the above tag, but for shorter quotes.</p>
+                <p>&lt;abbr&gt;&lt;/abbr&gt;<br>
+                Denotes abbreviations, along with the full forms.</p>
+                <p>&lt;acronym&gt;&lt;/acronym&gt;<br>
+                Tag for acronyms. No HTML5 support.</p>
+                <p>&lt;address&gt;&lt;/address&gt;<br>
+                Tag for specifying author’s contact details.</p>
+                <p>&lt;dfn&gt;&lt;/dfn&gt;<br>
+                Tag dedicated for definitions.</p>
+                <p>&lt;code&gt;&lt;/code&gt;<br>
+                This is used to display code snippets within
+                a paragraph.</p>
+                <p>&lt;sub&gt;&lt;/sub&gt;<br>
+                Used for writing a subscript (smaller font just
+                below the mid-point of normal font). Example: ax</p>
+                <p>&lt;sup&gt;&lt;/sup&gt;<br>
+                Similar to the above tag, but for superscripting.</p>
+                <p>&lt;small&gt;&lt;/small&gt;<br>
+                Reduces text size. In HTML5, it often refers to
+                redundant or invalid information.</p>
+
+                <h3>Tables</h3>
+                <p>&lt;table&gt;&lt;/table&gt;<br>
+                Marks a table in a webpage.</p>
+                <p>&lt;caption&gt;&lt;/caption&gt;<br>
+                Description of the table is placed inside this tag.</p>
+                <p>&lt;thead&gt;&lt;/thead&gt;<br>
+                Specifies information pertaining to specific
+                columns of the table.</p>
+                <p>&lt;tbody&gt;&lt;/tbody&gt;<br>
+                The body of&lt;/tfoot&gt;
+                Determines the footer of the table.</p>
+                <p>&lt;tr&gt;&lt;/tr&gt;<br>
+                Denotes a single row in a table.</p>
+                <p>&lt;th&gt;&lt;/th&gt;<br>
+                The value of a heading of a table’s column.</p>
+                <p>&lt;td&gt;&lt;/td&gt;<br>
+                A single cell of a table. Contains the actual
+                value/data.</p>
+                <p>&lt;colgroup&gt;&lt;/colgroup&gt;<br>
+                Used for grouping columns together.</p>
+                <p>&lt;col&gt;<br>
+                Denotes a column inside a table</p>
+
+
+
+             </td>
+
+        
+            </tr>
+            
+        </table><br>
+        <cite>https://www3.cs.stonybrook.edu/~pramod.ganapathi/doc/CSE102/CSE102-CheatSheetHTML.pdf</cite><br>
+        <cite>https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf</cite>
+
+        
+    </div>
+    <div class="last">
+        <a id="cssBtn1" href="css_cheatsheet.html">See CSS Cheatsheet</a>
+        <a id="resume" href="index.html">See Resume</a>
+    </div>
+    
+</body>
+
+</html>
