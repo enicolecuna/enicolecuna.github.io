@@ -36,5 +36,5 @@ document.getElementById("cssBtn").addEventListener("click", function() {
     window.location.href = "css_cheatsheet.html";
 });
 document.getElementById("resume").addEventListener("click", function() {
-    window.location.href = "Index.html";
+    window.location.href = "index.html";
 });
