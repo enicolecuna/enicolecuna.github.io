@@ -1,0 +1,180 @@
+.education-section {
+  background-color: #0f172a;
+  padding: 3rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .education-section {
+    padding: 3rem 5rem;
+  }
+}
+
+.education-title {
+  color: white;
+  font-size: 2rem; 
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.education-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 2rem;
+}
+
+
+.education-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+  .education-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.education-logo-year {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .education-logo-year {
+    align-items: center;
+    width: 180px;
+  }
+}
+
+.school-logo {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.education-year {
+  color: #67e8f9; 
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .education-year {
+    text-align: center;
+  }
+}
+
+.education-text {
+  color: white;
+  width: 100%;
+  border-left: 1px solid rgba(255, 255, 255, 0.05); 
+  padding-left: 1.5rem;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 100;
+}
+
+.school-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #a5f3fc;
+  margin-bottom: 0.5rem;
+}
+
+.education-details {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  color: #ecfeff; 
+  font-size: 0.875rem;
+}
+
+.skills-section {
+  padding: 3rem 1.5rem ;
+  background-color: #0f172a;
+  max-width: 1000px;
+  margin: 0 auto;
+  jdisplay: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-title {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.skill-category {
+  margin-bottom: 2.5rem;
+}
+
+.skill-category-title {
+  color: #67e8f9;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+   padding-left:15rem;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  padding-left:15rem;
+}
+
+.skill-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.05); 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  padding: 0.4rem 0.9rem;
+  color: #ecfeff;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(4px);
+}
+
+.skill-pill:hover {
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.skill-icon {
+  font-size: 1.2rem;
+  color: #67e8f9;
+}
+
+.skill-label {
+  font-size: 0.85rem;
+  text-align: left;
+}
+

@@ -1,0 +1,268 @@
+
+.profile-wrapper {
+  position: relative;
+}
+
+.profile-section {
+  position: relative;
+  min-height: 100vh;
+  padding: 0 2rem;
+  background-color: #0f172a; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: column;
+  
+  
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 9999px;
+  opacity: 0.7;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 0.3; }
+}
+
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1280px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .profile-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* Text column */
+.profile-text {
+  max-width: 450px;
+  color: white;
+  text-align: left;
+    font-family: 'Poppins', sans-serif;
+    text-shadow:
+    0 0 1px #22d3ee,
+    0 0 3px #22d3ee,
+   
+    0 0 5px rgba(34, 211, 238, 0.6),
+    0 0 12px rgba(34, 211, 238, 0.4);
+    animation: glowPulse 2s infinite ease-in-out;
+
+}
+
+.profile-text h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.profile-text p {
+  color: white; 
+}
+
+.highlight {
+  color: white; 
+}
+
+
+.profile-robot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glow-wrapper {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.glow-circle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.small-circle {
+  width: 340px;
+  height: 340px;
+  border: 1px solid rgba(34, 211, 238, 0.4);
+  box-shadow: 0 0 80px 30px rgba(34, 211, 238, 0.2);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.big-circle {
+  width: 420px;
+  height: 420px;
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  box-shadow: 0 0 100px 60px rgba(34, 211, 238, 0.1);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.robot {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+ 
+    transform: translate(8%, 9%);
+
+}.right-half-circle {
+  position: absolute;
+  height: 730px;
+  border-top-left-radius: 300px;
+  border-bottom-left-radius: 300px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: radial-gradient(circle at right, rgba(147, 51, 234, 0.12), transparent);
+
+  z-index: 0;
+  pointer-events: none;
+  display: none;
+}
+
+
+@media (min-width: 1024px) {
+  .right-half-circle {
+    display: block;
+    width: 900px;
+    left: -280px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .right-half-circle {
+    width: 1100px;
+    left: -350px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .right-half-circle {
+    width: 1300px;
+    left: -420px;
+  }
+}
+
+.nav-stepper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+  position: relative;
+}
+
+
+@media (min-width: 1024px) {
+  .nav-stepper {
+    
+    bottom: -8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 0;
+    z-index: 50;
+  }
+}
+
+
+
+
+.step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+  padding-right: 24px;
+  background-color: white;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  width: 220px;
+  height: 110px;
+}
+
+@media (max-width: 768px) {
+  .step-link {
+    width: 160px;
+    height: 80px;
+  }
+}
+
+.step-icon-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a5f3fc;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin-left: 6px;
+  margin-right: 18px;
+  width: 75px;
+  height: 75px;
+}
+
+@media (max-width: 768px) {
+  .step-icon-circle {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+.step-label {
+  color: #164e63;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+@media (max-width: 420px) {
+  .step-link {
+    width: 140px;
+    height: 70px;
+    padding-left: 16px;
+    padding-right: 20px;
+  }
+
+  .step-icon-circle {
+    width: 45px;
+    height: 45px;
+    margin-left: 4px;
+    margin-right: 12px;
+  }
+
+  .step-label {
+    color: #164e63;
+    font-size: 12px;
+     font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  }
+}
