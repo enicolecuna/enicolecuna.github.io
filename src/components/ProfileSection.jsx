@@ -27,7 +27,7 @@ const ProfileSection = () => {
               Hi, I’m <span className="highlight">Ellah Cuna</span>
             </h1>
             <p>
-              A UI/Web Developer who turns ideas into modern, glowing digital beauty.
+                I'm a Software Developer with a background in Web Development and Data Analytics.
             </p>
           </motion.div>
 

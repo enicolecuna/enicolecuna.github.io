@@ -94,46 +94,45 @@ const educationList = [
       "Technologies: Power BI, Microsoft Access, SQL, MONGODB, HTML, CSS, and JavaScript",
     ],
   },
-];
-
-const Education = () => {
+];const Education = () => {
   return (
-    <section className="education-section" id="education">
-
-      <h2 className="education-title">🎓 Education</h2>
-      <div className="education-list">
-        {educationList.map((edu, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.2 }}
-            viewport={{ once: true }}
-            className="education-card"
-          >
-            <div className="education-logo-year">
-              <img
-                src={edu.logo}
-                alt={`${edu.school} logo`}
-                className="school-logo"
-              />
-              <p className="education-year">{edu.year}</p>
-            </div>
-
-            <div className="education-text">
-              <h3 className="school-name">{edu.school}</h3>
-              <ul className="education-details">
-                {edu.details.map((line, i) => (
-                  <li key={i}>{line}</li>
-                ))}
-              </ul>
-            </div>
-          </motion.div>
-        ))}
-      </div>
+    <>
+     
+      <section className="education-section" id="education">
+        <h2 className="education-title">🎓 Education</h2>
+        <div className="education-list">
+          {educationList.map((edu, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
+              className="education-card"
+            >
+              <div className="education-logo-year">
+                <img
+                  src={edu.logo}
+                  alt={`${edu.school} logo`}
+                  className="school-logo"
+                />
+                <p className="education-year">{edu.year}</p>
+              </div>
+              <div className="education-text">
+                <h3 className="school-name">{edu.school}</h3>
+                <ul className="education-details">
+                  {edu.details.map((line, i) => (
+                    <li key={i}>{line}</li>
+                  ))}
+                </ul>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      
 
       
-      <div className="skills-section" id="skills">
+      <section id="skills" className="skills-section">
         <h2 className="skills-title">🛠 Skills</h2>
         {skills.map((group, groupIndex) => (
           <div key={groupIndex} className="skill-category">
@@ -148,8 +147,9 @@ const Education = () => {
             </div>
           </div>
         ))}
-      </div>
-    </section>
+      </section>
+      </section>
+    </>
   );
 };
 

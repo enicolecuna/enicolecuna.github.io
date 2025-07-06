@@ -1,5 +1,4 @@
-@tailwind base;
-@tailwind components;
+
 @tailwind utilities;
 
 @theme {
@@ -248,4 +247,7 @@
   --color-black: #000;
   --color-white: #fff;
   --color-bluse:  #060E26;
+}
+html {
+  scroll-behavior: smooth;
 }
