@@ -14,7 +14,7 @@ const steps = [
 const ProfileSection = () => {
   return (
     <div className="profile-wrapper">
-      <section className="profile-section">
+      <section className="profile-section" id="profile">
         <div className="profile-content">
           
           <motion.div

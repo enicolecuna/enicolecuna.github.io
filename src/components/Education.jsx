@@ -98,7 +98,7 @@ const educationList = [
 
 const Education = () => {
   return (
-    <section className="education-section">
+    <section className="education-section" id="education">
 
       <h2 className="education-title">🎓 Education</h2>
       <div className="education-list">
@@ -133,7 +133,7 @@ const Education = () => {
       </div>
 
       
-      <div className="skills-section">
+      <div className="skills-section" id="skills">
         <h2 className="skills-title">🛠 Skills</h2>
         {skills.map((group, groupIndex) => (
           <div key={groupIndex} className="skill-category">
